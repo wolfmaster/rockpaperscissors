@@ -1,17 +1,13 @@
-// esta funcion genera un numero aleatorio
 
+// esta funcion genera un numero aleatorio
 function computerPlay(minimo, maximo) {
-    let numero = Math.floor(Math.random() * (maximo - minimo +1) + minimo);
-    return numero;
+    let choices = ["rock", "paper", "scissors"]
+    return choices[Math.floor(Math.random() * choices.length)]
+
 }
 
 
-let opciones = ["piedra", "papel", "tijera"];
-let piedra = 0;
-let papel = 1;
-let tijera = 2;
-
-let computerSelection = computerPlay(0,2);
+let computerSelection = computerPlay();
 let playerSelection;
 
 playerSelection = prompt("¿Qué eliges?\nPiedra: 0\nPapel: 1\nTijera: 2", 0);
